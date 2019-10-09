@@ -22,7 +22,6 @@ const Post = styled(Link)`
 const IndexPage = ({ data }) => {
   const { allMarkdownRemark } = data
   const { edges } = allMarkdownRemark
-  console.log(edges)
 
   return (
     <Layout>

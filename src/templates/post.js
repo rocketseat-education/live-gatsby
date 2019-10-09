@@ -20,8 +20,8 @@ const IndexPage = ({ data }) => {
 }
 
 export const pageQuery = graphql`
-  query PostPage($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query PostPage($slug: String!) {
+    markdownRemark(frontmatter: { path: { eq: $slug } }) {
       html
       frontmatter {
         date

@@ -10,10 +10,7 @@ exports.createPages = ({ graphql, actions }) => {
         allMarkdownRemark {
           edges {
             node {
-              html
               frontmatter {
-                title
-                date(formatString: "DD/MM")
                 path
               }
             }
@@ -25,12 +22,13 @@ exports.createPages = ({ graphql, actions }) => {
     const posts = result.data.allMarkdownRemark.edges
     posts.forEach(({ node }) => {
       const { frontmatter } = node
+      const { path } = frontmatter
 
       createPage({
-        path: frontmatter.path,
+        path: path,
         component: post,
         context: {
-          path: frontmatter.path,
+          slug: path, // I used slug because path is a reserved word, and could cause conflicts
         },
       })
     })
