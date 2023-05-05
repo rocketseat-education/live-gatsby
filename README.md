@@ -107,3 +107,16 @@ Para mais informações sobre como contribuir dê uma olhada no arquivo [CONTRIB
 MIT - veja o arquivo [LICENSE.md](LICENSE.md) para mais informações.
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+<!--START_SECTION:footer-->
+
+<br />
+<br />
+
+<p align="center">
+  <a href="https://discord.gg/rocketseat" target="_blank">
+    <img align="center" src="https://storage.googleapis.com/golden-wind/comunidade/rodape.svg" alt="banner"/>
+  </a>
+</p>
+
+<!--END_SECTION:footer-->
